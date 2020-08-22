@@ -1,0 +1,27 @@
+
+.workgrid {
+    display: grid;
+    grid-template-areas: "moneytree" "petmatch";
+    grid-template-rows: 50%;
+    grid-template-columns: 50%;
+    outline: 1px solid red
+}
+.moneytree {
+    grid-area: moneytree;
+    margin: auto;
+    outline: 1px solid red
+}
+.petmatch {
+    grid-area: petmatch;
+    margin: auto;
+    outline: 1px solid red
+}
+@media only screen and (max-width: 600){
+.workgrid {
+    flex-direction: column;
+    grid-template-areas: 
+    "moneytree"
+    "petmatch";
+    grid-template-rows: 100%;
+    grid-template-columns: 1fr;
+}
